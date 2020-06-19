@@ -1,0 +1,5 @@
+name: CyberDuck Spotify Client
+type: module
+description: Wrapper for the Spotify API.
+core: 8.x
+package: CyberDuck

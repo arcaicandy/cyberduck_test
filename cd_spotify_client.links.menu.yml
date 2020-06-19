@@ -1,0 +1,5 @@
+cd_spotify_client.settings:
+  title: 'Spotify Client Settings'
+  description: 'Manage Spotify client settings'
+  route_name: cd_spotify_client.settings
+  parent: system.admin_config

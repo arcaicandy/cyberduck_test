@@ -1,0 +1,25 @@
+<h1 class="title">Spotify artist information</h1>
+ 
+<div class="artist-information">
+  <p class="artist-id" style="display: none;">Spotify Artist ID: {{ id }}</p>
+  <p class="artist-name" title="View this artist on Spotify">Name: <a href="{{ spotifyURL }}">{{ name }}</a></p>
+  <p class="artist-genres">Genres: {{ genres }}</p>
+  <p class="artist-followers">Followers: {{ followers }}</p>
+  <p class="artist-popularity">Popularity: {{ popularity }}</p>
+</div>
+
+<div class="artist-image">
+
+  {% if images | length > 0 %}
+
+    {% set imgHeight = 400 / images[0].width * images[0].height %}
+
+    <a href="{{ spotifyURL }}">
+      <img src="{{ images[0].url }}" title="{{ name }}"alt="An image from Spotify of the artist '{{ name }}'" width="400" height="{{ imgHeight }}">
+    </a>
+
+  {% else %}
+    <p class="artist-image-missing">No image available.</p>
+  {% endif %}
+
+</div>

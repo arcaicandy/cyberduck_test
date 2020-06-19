@@ -1,0 +1,7 @@
+administer spotify client:
+  title: 'Administer Spotify client'
+  description: 'Allow configuration of Spotify client settings'
+
+view spotify artist information:
+  title: 'View spotify artist information'
+  description: 'Allow viewing of Spotify artist information'

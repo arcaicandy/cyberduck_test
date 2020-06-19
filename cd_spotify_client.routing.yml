@@ -1,0 +1,15 @@
+cd_spotify_client.settings:
+  path: '/admin/config/spotify/client'
+  defaults:
+    _form: '\Drupal\cd_spotify_client\Form\ConfigForm'
+    _title: 'Spotify client settings'
+  requirements:
+    _permission: 'administer spotify client'
+
+cd_spotify_client.artist:
+  path: '/spotify/artist/{artist_id}'
+  defaults:
+    _controller: '\Drupal\cd_spotify_client\Controller\ArtistController::ArtistInformation'
+    _title: 'Artist information'
+  requirements:
+    _permission: 'view spotify artist information'

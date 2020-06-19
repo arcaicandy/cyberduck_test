@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Contains cd_spotify_client.module.
+ */
+function cd_spotify_client_theme() {
+
+  return [
+
+    'cd_spotify_artist_information' => [
+      'variables' => [
+        'id' => NULL,
+        'name' => NULL,
+        'spotifyURL' => NULL,
+        'followers' => NULL,
+        'popularity' => NULL,
+        'genres' => NULL,
+        'images' => NULL,
+      ],
+    ],
+
+  ];
+
+}

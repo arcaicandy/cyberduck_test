@@ -1,0 +1,6 @@
+services:
+  cd_spotify_client.spotifyclient:
+    class: '\Drupal\cd_spotify_client\Client\SpotifyClient'
+    arguments: ['@config.factory']
+    properties:
+      apiProviderName: 'Spotify'
